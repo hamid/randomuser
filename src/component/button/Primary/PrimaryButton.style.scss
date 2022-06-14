@@ -1,0 +1,27 @@
+:root {
+    --primary-button-bg: #f1f1f1;
+    --primary-button-bg-dark: #e9e9e9;
+    --primary-button-bg-light: #f4f4f4;
+    --primary-button-color: var(--c-text-light);
+}
+
+.primary-button{
+    color: var(--primary-button-color);
+    font-weight: bold;
+    background: var(--primary-button-bg);
+    border-radius: 10px;
+    padding: 7px 20px;
+    border: 0px;
+    border-bottom: 4px solid #ccc;
+    cursor: pointer;
+    transition: all ease 150ms;
+    font-family: "Raleway", sans-serif;
+    &:hover{
+        border-bottom: 3px solid #ccc;
+        background-color: var(--primary-button-bg-dark);
+    }
+    &:active{
+        border-bottom: 1px solid #ccc;
+        background-color: var(--primary-button-bg-light);
+    }
+}

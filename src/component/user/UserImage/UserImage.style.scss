@@ -1,0 +1,28 @@
+
+    
+
+
+.user-card-image{
+    display: block;
+    width: 100%;
+    img{
+        display: block;
+        width: 100%;
+        aspect-ratio: 3/3;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: calc(var(--user-card-holder-radius) - var(--user-card-holder-padding));
+        animation-name: fadein;
+        animation-duration: 700ms;
+    }
+    
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

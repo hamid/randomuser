@@ -1,0 +1,26 @@
+
+    
+:root {
+    --user-country-color : var(--c-text-light);
+    --user-country-bg : #f1f1f1
+}
+
+.user-country-holder{
+
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: flex-end;
+    
+
+    .user-country-name{
+        font-size: 1.3em;
+        color: var(--user-country-color);
+        margin: 10px;
+        text-transform: capitalize;
+        background: var(--user-country-bg);
+        padding: 5px 20px;
+        border-radius: 20px;
+        
+    }
+}

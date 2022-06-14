@@ -1,0 +1,129 @@
+@import url('https: //fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --c-primary: #ccc;
+    --c-text: #1D1F22;
+    --c-text-light: #626468;
+    --c-active: #2c3e50;
+}
+
+html,
+body {
+    margin: 0;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--c-text);
+}
+
+a:hover {
+    transition: all ease 150ms;
+    color: var(--c-primary);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.main-layout{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.outlet-holder {
+    position: relative;
+    min-height: 100vh;
+    flex: 1;
+}
+
+
+
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+
+    // nav bar
+    .nav-bar {
+        flex: 1;
+
+        nav {
+            font-size: 1.6em;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                li {
+                    margin: 0 15px;
+                    position: relative;
+                    transition: all 500ms ease-in-out;
+                    color: var(--c-text-light);
+
+                    &.active {
+                        z-index: 1;
+
+                        a {
+                            color: var(--c-active);
+                            font-weight: bold;
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        background-color: var(--c-active);
+                        position: absolute;
+                        left: 0;
+                        bottom: -10px;
+                        width: 0%;
+                        height: 0px;
+                        z-index: 2;
+                        transition: all .3s ease-in-out;
+                    }
+
+                    &:hover::before,
+                    &.active::before {
+                        width: 100%;
+                        height: 4px;
+                    }
+
+                    &:active::before {
+                        width: 100%;
+                        height: 200%;
+                        transition: all 300ms ease-in-out;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+.footer{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

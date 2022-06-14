@@ -1,0 +1,81 @@
+
+    
+:root {
+    --user-card-holder-width: 16vw;
+    --user-card-holder-min-height: 40vh;
+    --user-card-holder-padding: 10px;
+    --user-card-holder-radius: 20px;
+    --user-card-holder-shadow: 0 0 15px rgba(0,0,0,0.15);
+    --user-card-holder-shadow-hover: 0 0 55px rgba(0,0,0,0.15);
+    --user-card-border-bottom: 4px solid #e4e4e4;
+}
+
+.user-card-holder{
+    width: var(--user-card-holder-width);
+    min-height: var(--user-card-holder-min-height);
+    border-radius: var(--user-card-holder-radius);
+    padding: var(--user-card-holder-padding);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 0%;
+    box-shadow: var(--user-card-holder-shadow);
+    z-index: 10;
+    position: relative;
+    border-bottom: var(--user-card-border-bottom);
+    transition: all ease 150ms;
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.05,1.05);
+        box-shadow: var(--user-card-holder-shadow-hover);
+    }
+    &:active{
+        transform: scale(1.03, 1.03);
+        box-shadow: var(--user-card-holder-shadow);
+    }
+
+
+    .col-w1{
+        display: flex;
+        flex-direction: column;
+        flex:3;
+        align-self: stretch;
+    }
+    .col-w2{
+        display: flex;
+        flex-direction: column;
+        flex:1;
+        align-self: stretch;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    :root {
+        --user-card-holder-width: 55vw;
+        --user-card-holder-min-height: 40vh;
+        --user-card-holder-padding: 10px;
+        --user-card-holder-radius: 20px;
+        --user-card-holder-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        --user-card-border-bottom: 4px solid #e4e4e4;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    :root {
+            --user-card-holder-width: 90vw;
+            --user-card-holder-min-height: 40vh;
+            --user-card-holder-padding: 10px;
+            --user-card-holder-radius: 20px;
+            --user-card-holder-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            --user-card-border-bottom: 4px solid #e4e4e4;
+        }
+}

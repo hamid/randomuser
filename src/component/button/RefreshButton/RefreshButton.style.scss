@@ -1,0 +1,33 @@
+.refresh-button{
+    width: var(--user-card-holder-width);
+    min-height: 38px;
+    border-radius: 0px 0px var(--user-card-holder-radius) var(--user-card-holder-radius);
+    padding: var(--user-card-holder-padding);
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: -20px;
+    box-shadow: var(--user-card-holder-shadow);
+    z-index: 1;
+    position: relative;
+    padding-top: 35px;
+    border-bottom: var(--user-card-border-bottom);
+    animation-name: fadeBottom;
+    animation-duration: 500ms;
+}
+
+
+@keyframes fadeBottom {
+    from{
+        opacity: 0;
+        margin-top: -90px;
+    }
+    to{
+        opacity: 1;
+        margin-top: -20px;
+    }
+}

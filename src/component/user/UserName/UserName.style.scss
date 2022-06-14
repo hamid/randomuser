@@ -1,0 +1,19 @@
+
+    
+:root {
+    --user-first-name-color : var(--c-text);
+    --user-last-name-color : var(--c-text-light);
+}
+
+h1.user-first-name{
+    font-size: 2em;
+    color: var(--user-first-name-color);
+    margin: 5px;
+    text-transform: capitalize;
+}
+h2.user-last-name{
+    font-size: 1.5em;
+    color: var(--user-last-name-color);
+    margin: 5px;
+    text-transform: capitalize;
+}
