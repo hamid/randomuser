@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Random user 
+![randomuser](https://user-images.githubusercontent.com/1645233/173552010-532703f9-8b69-4fd5-b41f-04a69a91f1e7.gif)
+- React Hook + typescript + scss + router + context
+- Refresh the button to get another random user
+- It stores previous items by LocalStorage
+- We could switch between items by Arrow(right →, left,←,) and enter or space to get new one
+- It has simple Responsive components
+- It uses randomuser.me API
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
